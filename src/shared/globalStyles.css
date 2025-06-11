@@ -1,0 +1,97 @@
+.screen-container{
+    width:100vw;
+    height:100%;
+    min-height: 100vh;
+    z-index: 2;
+    background-color: #2B2E4A;
+    border-radius: 30px;
+    padding-left:1vw;
+    margin-left:100px;
+    color:white;
+}
+ul{
+    list-style-type: none;
+}
+.albumImage{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+.cover{
+    border-radius: 30px;
+    width: 100%;
+    aspect-ratio: 1;
+}
+.albumImage-shadow {
+    -webkit-filter: blur(5px);
+    border-radius: 30px;
+    filter: blur(5px);
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 10%;
+}
+.trackTitle{
+    font-weight: bold;
+    margin:0;
+}
+.artistName{
+    color:white;
+    opacity:0.5;
+    margin:0;
+}
+.info{
+    margin:20px 15px 10px 15px;
+    text-align: center;
+    width:200px;
+    text-wrap:wrap;
+}
+.tracks{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+
+
+.track-card{
+    /* width:max-content; */
+    padding: 15px;
+    /* border: 2px solid aliceblue; */
+    border-radius: 30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    position: fixed;
+    top: 1rem;
+    right:3rem;
+    background: #090979;
+    background: linear-gradient(90deg, rgba(9, 9, 121, 1) 35%, rgba(58, 63, 105, 1) 100%);
+}
+.track-list{
+    display:flex;
+    width:fit-content;
+    padding: 5px;
+    width:40vw;
+    border-radius:10px;
+}
+.listImage{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.track-list:hover{
+    background-color: #526D82;
+    transition: all 0.3s ease-in-out;
+}
+.duration{
+    margin-left:auto;
+    opacity:0.5;
+}

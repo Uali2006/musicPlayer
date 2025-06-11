@@ -1,0 +1,9 @@
+.goBackBtn{
+    width: max-content;
+    border-radius: 30px;
+    background-color: #F4CE14;
+    padding:15px;
+    color:black;
+    font-weight: bold;
+    margin:20px;
+}
